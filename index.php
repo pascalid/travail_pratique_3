@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>formulaire uqam</title>
-	<script src="formulaire.js"></script>
+	<script src="scripts/formulaire.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
