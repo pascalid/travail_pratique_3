@@ -77,7 +77,7 @@
           <input type="radio" id="refugie" name="statut" value="refugie"><span class="erreur"></span><br>
 
           <label for="langue">Langue d’usage (Langue parlée le plus souvent à la maison)</label>
-		  <label for="francais">Frençais</label>
+		  <label for="francais">Français</label>
           <input type="radio" id="francais" name="langue" value="francais">
           <label for="anglais">Anglais</label>
           <input type="radio" id="anglais" name="langue" value="anglais">
