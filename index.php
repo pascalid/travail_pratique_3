@@ -170,8 +170,8 @@
 
 		<h3>Programmes demandés</h3>
 
-		<label for="trimestre">Je désire entreprendre mes études au trimestre :</label>
-		<label for="hiver">Hiver</label>
+		    <label for="trimestre">Je désire entreprendre mes études au trimestre :</label>
+		    <label for="hiver">Hiver</label>
         <input type="radio" id="hiver" name="trimestre" value="hiver">
         <label for="ete">Été</label>
         <input type="radio" id="ete" name="trimestre" value="ete">
@@ -182,10 +182,34 @@
         <input type="text" id="anne" name="anne"> <span class="erreur"></span><br>  
 
         <fieldset>
+
         	<legend>Premier choix</legend>
 
         	<label for="titreA">Titre</label>
         	<input type="text" id="titreA" name="titreA"> <span class="erreur"></span><br> 
+
+          <label for="codeA">Code</label>
+          <input type="text" id="codeA" name="codeA"> <span class="erreur"></span><br> 
+
+          <label for="diplomeA">Type de diplome</label>
+          <label for="bac">Baccalauréat</label>
+          <input type="radio" id="bac" name="diplomeA" value="bac">
+          <label for="majeure">Majeure</label>
+          <input type="radio" id="majeure" name="diplomeA" value="majeure">
+          <label for="mineure">Mineure</label>
+          <input type="radio" id="mineure" name="diplomeA" value="mineure">
+          <label for="certificat">Certificat</label>
+          <input type="radio" id="certificat" name="diplomeA" value="certificat">
+          <label for="progCourt">Programme court</label>
+          <input type="radio" id="progCourt" name="diplomeA" value="progCourt"><span class="erreur"></span><br>
+
+
+          <label for="tempsA">Je vais faire une session en :</label>
+          <label for="tempsComplet">Temps complet</label>
+          <input type="radio" id="tempsComplet" name="tempsA" value="tempsComplet">
+          <label for="tempsPartiel">Temps partiel</label>
+          <input type="radio" id="tempsPartiel" name="tempsA" value="tempsPartiel"><span class="erreur"></span><br>          
+
         </fieldset>
 
         <fieldset>
@@ -193,20 +217,87 @@
         	<label for="titreB">Titre</label>
         	<input type="text" id="titreB" name="titreB"> <span class="erreur"></span><br>
 
+          <label for="codeB">Code</label>
+          <input type="text" id="codeB" name="codeB"> <span class="erreur"></span><br> 
+
+          <label for="diplomeB">Type de diplome</label>
+          <label for="bac">Baccalauréat</label>
+          <input type="radio" id="bac" name="diplomeB" value="bac">
+          <label for="majeure">Majeure</label>
+          <input type="radio" id="majeure" name="diplomeB" value="majeure">
+          <label for="mineure">Mineure</label>
+          <input type="radio" id="mineure" name="diplomeB" value="mineure">
+          <label for="certificat">Certificat</label>
+          <input type="radio" id="certificat" name="diplomeB" value="certificat">
+          <label for="progCourt">Programme court</label>
+          <input type="radio" id="progCourt" name="diplomeB" value="progCourt"><span class="erreur"></span><br>
+
+
+          <label for="tempsB">Je vais faire une session en :</label>
+          <label for="tempsCompletB">Temps complet</label>
+          <input type="radio" id="tempsCompletB" name="tempsB" value="tempsCompletB">
+          <label for="tempsPartielB">Temps partiel</label>
+          <input type="radio" id="tempsPartielB" name="tempsB" value="tempsPartielB"><span class="erreur"></span><br> 
+
         </fieldset>
         <fieldset>
         	<legend>Troisième choix (nous vous suggérons fortement un programme non contingenté)</legend>
         	<label for="titreC">Titre</label>
-        	<input type="text" id="titreC" name="titreC"> <span class="erreur"></span><br> 
+        	<input type="text" id="titreC" name="titreC"> <span class="erreur"></span><br>
+
+          <label for="codeC">Code</label>
+          <input type="text" id="codeC" name="codeC"> <span class="erreur"></span><br> 
+
+          <label for="diplomeC">Type de diplome</label>
+          <label for="bac">Baccalauréat</label>
+          <input type="radio" id="bac" name="diplomeC" value="bac">
+          <label for="majeure">Majeure</label>
+          <input type="radio" id="majeure" name="diplomeC" value="majeure">
+          <label for="mineure">Mineure</label>
+          <input type="radio" id="mineure" name="diplomeC" value="mineure">
+          <label for="certificat">Certificat</label>
+          <input type="radio" id="certificat" name="diplomeC" value="certificat">
+          <label for="progCourt">Programme court</label>
+          <input type="radio" id="progCourt" name="diplomeC" value="progCourt"><span class="erreur"></span><br>
+
+
+          <label for="tempsC">Je vais faire une session en :</label>
+          <label for="tempsCompletC">Temps complet</label>
+          <input type="radio" id="tempsCompletC" name="tempsC" value="tempsCompletC">
+          <label for="tempsPartielC">Temps partiel</label>
+          <input type="radio" id="tempsPartielC" name="tempsC" value="tempsPartielC"><span class="erreur"></span><br> 
+
         </fieldset>
 
 	</div>
 
 	<div id="page3">
 
+    <fieldset>
+
+      <legend>Renseignements sur les études universitaires</legend>
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend>Renseignements sur les emplois</legend>
+
+    </fieldset>
+
 	</div>
 
 	<div id="page4">
+
+    <fieldset>
+
+      <legend>Renseignements supplémentaires</legend>
+
+      <textarea rows="4" cols="50">
+      
+      </textarea>
+
+    </fieldset>
 
 	</div>
 	
