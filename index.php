@@ -12,53 +12,56 @@
 		<h1>Formulaire d'inscription à l'uqam</h1>
 	</div>
 
+  <form action="confirmation.php" method="post" onsubmit="return validerForm()">
+
+    
 	<div id="page1">
 
-		<h3>identification</h3>	
+		<h2>identification</h2>	
 
-		  <label for="nomFamille">Nom du parent:</label>
-          <input type="text" id="nomFamille" name="nomFamille"> <span class="erreur"></span><br>
+		  <label for="nomFamille">Nom de famille</label>
+          <input type="text" id="nomFamille" name="nomFamille"> <span class="erreur" id="err_nom" ></span><br>
 
 		  <label for="prenom">Prénom usuel</label>
-          <input type="text" id="prenom" name="prenom"> <span class="erreur"></span><br>
+          <input type="text" id="prenom" name="prenom"> <span class="erreur" id="err_pre" ></span><br>
 
 		  <label for="dateNaissance">Date de naissance (format : JJ-MM-AAAA)</label>
-          <input type="text" id="dateNaissance" name="dateNaissance"> <span class="erreur"></span><br>
+          <input type="text" id="dateNaissance" name="dateNaissance"> <span class="erreur" id="err_date" ></span><br>
 
 		  <label for="codePermanent">Code permanent (alphanumérique) si vous avez déjà étudié à l’UQAM</label>
-          <input type="text" id="codePermanent" name="codePermanent"> <span class="erreur"></span><br>
+          <input type="text" id="codePermanent" name="codePermanent"> <span class="erreur" id="err_codeA" ></span><br>
 
 		  <label for="codePermanentb">Code permanent (alphanumérique) du ministère de l’Éducation et de l’Enseignement supérieur</label>
-          <input type="text" id="codePermanentb" name="codePermanentb"> <span class="erreur"></span><br>
+          <input type="text" id="codePermanentb" name="codePermanentb"> <span class="erreur" id="err_codeB" ></span><br>
 
           <label for="nomPere">Nom de famille du père à la naissance</label>
-          <input type="text" id="nomPere" name="nomPere"> <span class="erreur"></span><br>
+          <input type="text" id="nomPere" name="nomPere"> <span class="erreur" id="err_nomP" ></span><br>
 
 		  <label for="prenomPere">Prénom usuel du père</label>
-          <input type="text" id="prenomPere" name="prenomPere"> <span class="erreur"></span><br>
+          <input type="text" id="prenomPere" name="prenomPere"> <span class="erreur" id="err_preP" ></span><br>
 
           <label for="nomPere">Nom de famille de la mère à la naissance</label>
-          <input type="text" id="nomPere" name="nomPere"> <span class="erreur"></span><br>
+          <input type="text" id="nomPere" name="nomPere"> <span class="erreur" id="err_nomM" ></span><br>
 
 		  <label for="prenomPere">Prénom usuel de la mère</label>
-          <input type="text" id="prenomPere" name="prenomPere"> <span class="erreur"></span><br>        
+          <input type="text" id="prenomPere" name="prenomPere"> <span class="erreur" id="err_preM" ></span><br>        
 
 		  <label for="telephone">Téléphone à domicile</label>
-          <input type="text" id="telephone" name="telephone"> <span class="erreur"></span><br>
+          <input type="text" id="telephone" name="telephone"> <span class="erreur" id="err_telA" ></span><br>
 
 		  <label for="cell">Cellulaire</label>
-          <input type="text" id="cell" name="cell"> <span class="erreur"></span><br>   
+          <input type="text" id="cell" name="cell"> <span class="erreur" id="err_telB" ></span><br>   
 
 		  <label for="telephone">Téléphone au travail</label>
-          <input type="text" id="telephone" name="telephone"> <span class="erreur"></span><br>
+          <input type="text" id="telephone" name="telephone"> <span class="erreur" id="err_telC" ></span><br>
 
           <label for="couriel">Courriel</label>
-          <input type="text" id="couriel" name="couriel"> <span class="erreur"></span><br>
+          <input type="text" id="couriel" name="couriel"> <span class="erreur" id="err_courriel" ></span><br>
 
 		  <label for="assSociale">No d’assurance sociale</label>
-          <input type="text" id="assSociale" name="assSociale"> <span class="erreur"></span><br>     
+          <input type="text" id="assSociale" name="assSociale"> <span class="erreur" id="err_social" ></span><br>     
 
-		  <label for="statut">Statut au Canada : </label>
+		  <label for="statut">Statut au Canada : </label><br>
 		  <label for="canadien">Canadien</label>
           <input type="radio" id="canadien" name="statut" value="canadien">
           <label for="resperma">Resident permanent</label>
@@ -74,53 +77,53 @@
           <label for="permiTemp">Permis de séjour temporaire</label>
           <input type="radio" id="permiTemp" name="statut" value="permiTemp">
           <label for="refugie">Réfugié</label>
-          <input type="radio" id="refugie" name="statut" value="refugie"><span class="erreur"></span><br>
+          <input type="radio" id="refugie" name="statut" value="refugie"><span class="erreur" id="err_statut" ></span><br>
 
-          <label for="langue">Langue d’usage (Langue parlée le plus souvent à la maison)</label>
-		  <label for="francais">Français</label>
+          <label for="langue">Langue d’usage (Langue parlée le plus souvent à la maison)</label><br>
+		      <label for="francais">Frençais</label>
           <input type="radio" id="francais" name="langue" value="francais">
           <label for="anglais">Anglais</label>
           <input type="radio" id="anglais" name="langue" value="anglais">
           <label for="ameInu">Amérindien ou Inuktitut</label>
           <input type="radio" id="ameInu" name="langue" value="ameInu">
           <label for="autre">Autre (précisez)</label>
-          <input type="radio" id="autre" name="langue" value="autre"><span class="erreur"></span><br> 
+          <input type="radio" id="autre" name="langue" value="autre"><span class="erreur" id="err_lanA" ></span><br> 
 
 
-          <label for="langueMat">Langue maternelle (Première langue apprise et encore comprise)</label>
-		  <label for="francaisMat">Frençais</label>
+          <label for="langueMat">Langue maternelle (Première langue apprise et encore comprise)</label><br>
+		      <label for="francaisMat">Frençais</label>
           <input type="radio" id="francaisMat" name="langueMat" value="francaisMat">
           <label for="anglaisMat">Anglais</label>
           <input type="radio" id="anglaisMat" name="langueMat" value="anglaisMat">
           <label for="ameInuMat">Amérindien ou Inuktitut</label>
           <input type="radio" id="ameInuMat" name="langueMat" value="ameInuMat">
           <label for="autreMat">Autre (précisez)</label>
-          <input type="radio" id="autreMat" name="langueMat" value="autreMat"><span class="erreur"></span><br>               
+          <input type="radio" id="autreMat" name="langueMat" value="autreMat"><span class="erreur" id="err_lanB" ></span><br>               
 
           <fieldset>
 
           <legend>Adresse de correspondance</legend>
 
 		  <label for="numcivCorres">Numero civique</label>
-          <input type="text" id="numcivCorres" name="numcivCorres"> <span class="erreur"></span><br>
+          <input type="text" id="numcivCorres" name="numcivCorres"> <span class="erreur" id="err_civique" ></span><br>
 
 		  <label for="appartCorres">No d’appartement ou d’unité</label>
-          <input type="text" id="appartCorres" name="appartCorres"> <span class="erreur"></span><br>          
+          <input type="text" id="appartCorres" name="appartCorres"> <span class="erreur" id="err_app" ></span><br>          
 
 		  <label for="rumCorres">Type et nom de la rue</label>
-          <input type="text" id="rumCorres" name="rumCorres"> <span class="erreur"></span><br>  
+          <input type="text" id="rumCorres" name="rumCorres"> <span class="erreur" id="err_nomRue" ></span><br>  
 
 		  <label for="rueCorres">Direction de rue </label>
-          <input type="text" id="rueCorres" name="rueCorres"> <span class="erreur"></span><br>
+          <input type="text" id="rueCorres" name="rueCorres"> <span class="erreur" id="err_rueDirec" ></span><br>
 
           <label for="municipalCorres">Municipalité</label>
-          <input type="text" id="municipalCorres" name="municipalCorres"> <span class="erreur"></span><br>
+          <input type="text" id="municipalCorres" name="municipalCorres"> <span class="erreur" id="err_muni" ></span><br>
 
           <label for="postalCorres">Code postal</label>
-          <input type="text" id="postalCorres" name="postalCorres"> <span class="erreur"></span><br>
+          <input type="text" id="postalCorres" name="postalCorres"> <span class="erreur" id="err_postal" ></span><br>
 
           <label for="paysCorres">Pays (si autre que le Canada)</label>
-          <input type="text" id="paysCorres" name="paysCorres"> <span class="erreur"></span><br>                                                
+          <input type="text" id="paysCorres" name="paysCorres"> <span class="erreur" id="err_pays" ></span><br>                                                
             
           </fieldset>
 
@@ -152,23 +155,24 @@
           </fieldset>                                                                  
 
 		  <label for="sexe">Sexe :</label>
-		  <label for="Canada">feminin</label>
+		  <label for="feminin">feminin</label>
           <input type="radio" id="feminin" name="sexe" value="feminin">
-          <label for="Canada">masculin</label>
-          <input type="radio" id="masculin" name="sexe" value="masculin"><span class="erreur"></span><br>
+      <label for="masculin">masculin</label>
+          <input type="radio" id="masculin" name="sexe" value="masculin"><span class="erreur" id="err_genre" ></span><br>
 
-		  <label for="Canada">Citoyenneté</label>
+		  <label for="citoyen">Citoyenneté</label>
+      <label for="Canada">Canada</label>
           <input type="radio" id="Canada" name="citoyennete" value="canada">
-          <label for="autre">Autre (précisez)</label>
-          <input type="radio" id="autre" name="citoyennete" value="autre"><span class="erreur"></span><br>   
+      <label for="autreCit">Autre (précisez)</label>
+          <input type="radio" id="autreCit" name="citoyennete" value="autreCit"><span class="erreur" id="err_citoyen" ></span><br>   
 
 
-
+          <input type="submit" value="Envoyer">
 	</div>
 
 	<div id="page2">
 
-		<h3>Programmes demandés</h3>
+		<h2>Programmes demandés</h2>
 
 		    <label for="trimestre">Je désire entreprendre mes études au trimestre :</label>
 		    <label for="hiver">Hiver</label>
@@ -299,6 +303,13 @@
 
     </fieldset>
 
+    
+
 	</div>
+
+  
+
+  </form>
+
 	
 </body>
