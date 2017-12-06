@@ -22,9 +22,9 @@
 		  <label for="nomFamille">Nom de famille</label>
           <input type="text" id="nomFamille" name="nomFamille"> <span class="erreur" id="err_nom" ></span><br>
 
-		  <label for="prenom">Prénom usuel</label>
+		 <label for="prenom">Prénom usuel</label>
           <input type="text" id="prenom" name="prenom"> <span class="erreur" id="err_pre" ></span><br>
-
+ 
 		  <label for="dateNaissance">Date de naissance (format : JJ-MM-AAAA)</label>
           <input type="text" id="dateNaissance" name="dateNaissance"> <span class="erreur" id="err_date" ></span><br>
 
@@ -152,9 +152,11 @@
           <label for="paysActu">Pays (si autre que le Canada)</label>
           <input type="text" id="paysActu" name="paysActu"> <span class="erreur"></span><br>                                                
             
-          </fieldset>                                                                  
+          </fieldset>  
 
-		  <label for="sexe">Sexe :</label>
+                                                                         
+
+		  Sexe :
 		  <label for="feminin">feminin</label>
           <input type="radio" id="feminin" name="sexe" value="feminin">
       <label for="masculin">masculin</label>
@@ -167,7 +169,7 @@
           <input type="radio" id="autreCit" name="citoyennete" value="autreCit"><span class="erreur" id="err_citoyen" ></span><br>   
 
 
-          <input type="submit" value="Envoyer">
+          <input type="button" value="Click Me" onclick="return validerForm()" >
 	</div>
 
 	<div id="page2">
